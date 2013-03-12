@@ -1,4 +1,11 @@
 Rock-paper-scissors
 ===================
 
-"Rock-paper-scissors" game on Sinatra :wink:
+Installation
+------------
+    git clone %repo-name%
+    gem install sinatra
+    
+Usage
+-----
+    ruby game.rb
