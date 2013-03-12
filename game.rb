@@ -14,7 +14,7 @@ end
 get '/throw/:type' do
 	@player_throw = params[:type].to_sym
 	unless @throws.include?(@player_throw)
-		halt 403, "You must throw one of the followinf: #{@throws}"
+		halt 403, "You must throw one of the following: #{@throws}"
 	end
 	erb :result
 end
