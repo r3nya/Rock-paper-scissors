@@ -1,7 +1,15 @@
-<div style="text-align: center;">
-  <% @throws.each do |i| %>
-    <h2>
-    	<a href="/throw/<%= i %>"><%= i %></a>
-    </h2>
-  <% end %>
+<ul class="links">
+  <li class="links__item">
+    <% @throws.each do |i| %>
+
+          <a href="/throw/<%= i %>">
+            <span class="links__title"><%= i %></span>
+          </a>
+
+    <% end %>
+  </li>
+</ul>
+
+<div id="footer">
+  <p>Sinatra version <%= Sinatra::VERSION %>.</p>
 </div>

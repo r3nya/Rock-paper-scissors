@@ -1,5 +1,4 @@
-<div style="text-align: center;">
-	
+<h1>
 	<% computer_throw = @throws.sample %>
 
 	<% if @player_throw == computer_throw %>
@@ -9,5 +8,8 @@
 	<% else %>
 		<%= "Ouch! #{computer_throw} beats #{@player_throw} ... Better luck next time!" %>
 	<% end %>
-	
-</div>
+  <br/>
+  <div id="footer">
+    <a href="/">Again?</a>
+  </div>
+</h1>

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
   <html>
     <head>
+      <meta charset="UTF-8" />
+      <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
       <title><%= @title %></title>
       <link href="/css/styles.css" media="screen" rel="stylesheet" type="text/css" media="screen, projection" />
     </head>
   <body>
-    <%= yield %>
-      
-    <div id="debug" style="text-align: center;">
-      <p>Sinatra version <%= Sinatra::VERSION %>. :)</p>
-    <div>
+    <div class="content">
+        <%= yield %>
+    </div>
   </body>
 </html>
