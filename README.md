@@ -4,8 +4,10 @@ Rock-paper-scissors
 Installation
 ------------
     git clone %repo-name%
-    gem install sinatra
+    bundle install
     
 Usage
 -----
     ruby game.rb
+
+Have fun! :)
