@@ -3,13 +3,17 @@
 
 	<% if @player_throw == computer_throw %>
 		<%= "You tied with the computer. Try again!" %>
+        <% @title = "-_-" %>
 	<% elsif computer_throw == @defeat[@player_throw] %>
 		<%= "Nicely done! #{@player_throw} beats #{computer_throw}!" %>
+        <% @title = ":)" %>
 	<% else %>
 		<%= "Ouch! #{computer_throw} beats #{@player_throw} ... Better luck next time!" %>
+        <% @title = ":(" %>
 	<% end %>
-  <br/>
-  <div id="footer">
-    <a href="/">Again?</a>
-  </div>
 </h1>
+
+<div id="footer">
+    <a href="/">Again?</a>
+</div>
+
